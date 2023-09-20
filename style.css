@@ -1,3 +1,4 @@
+/* Universal */
 html {
     box-sizing: border-box;
 }
@@ -9,5 +10,27 @@ html {
 }
 
 :root {
+    --primary: #0093da;
+    --highlight: #fab200;
+    --bg-color: #e1e8f1;
+    --head-color: #ffffff;
+}
+/* Header */
 
+/* Sidebar */
+
+/* Main */
+
+/* Icons & Profiles */
+
+.profile-img-small {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.profile-img-large {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
 }
