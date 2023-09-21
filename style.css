@@ -3,7 +3,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -38,7 +40,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: .5rem .5rem .5rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
 }
 
 #searchbar {
@@ -70,7 +72,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: .5rem .5rem .5rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
 }
 
 .links-container {
@@ -85,7 +87,7 @@ body {
 .button {
     background-color: var(--primary);
     border-style: none;
-    padding: .75rem 1.75rem;
+    padding: 0.75rem 1.75rem;
     width: 100px;
     border-radius: 2rem;
 }
@@ -108,7 +110,8 @@ body {
     margin: 1rem;
 }
 
-ul > li, .logo-container {
+ul > li,
+.logo-container {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -143,12 +146,25 @@ ul > li, .logo-container {
 .card {
     background-color: var(--fg-color);
     box-shadow: 2px 2px lightgray;
-    border-radius: .5rem;
-    /* height: 200px; */
+    border-radius: 0.5rem;
     margin: 1rem;
     padding: 1rem;
+    border-left: 10px solid var(--highlight);
 }
 
+.text-content {
+    margin: 0.5rem;
+    line-height: 1.75rem;
+}
+
+.action-content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+/* Announcements & Trending */
 .main-sidebar {
     grid-column: 7 / 9;
     display: grid;
@@ -165,8 +181,8 @@ ul > li, .logo-container {
     box-shadow: 2px 2px lightgray;
     flex: 1;
     display: flex;
-    flex-direction: column;    
-    border-radius: .5rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
     padding: 1rem;
     margin: 1rem;
     gap: 1rem;
@@ -174,25 +190,25 @@ ul > li, .logo-container {
 
 .announce-card + .announce-card {
     border-top: 1px solid darkgrey;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
 .announce-card h4 {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .announce-card p {
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
 }
 
 .trending-container {
     background-color: var(--fg-color);
-    box-shadow: 2px 2px lightgray;  
-    border-radius: .5rem;  
+    box-shadow: 2px 2px lightgray;
+    border-radius: 0.5rem;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     padding: 1rem;
     margin: 1rem;
     gap: 2rem;
@@ -202,11 +218,11 @@ ul > li, .logo-container {
 .trend {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 .trend-tag {
-    font-size: .75rem;
+    font-size: 0.75rem;
     font-weight: 200;
 }
 
